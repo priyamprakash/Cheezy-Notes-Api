@@ -2,7 +2,7 @@ const userModel = require("../models/user");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const config = require("../../config");
-const SECRET_KEY = config.SECRET_KEY;
+const SECRET_KEY = process.env.SECRET_KEY;
 
 
 // Existig user check 

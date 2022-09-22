@@ -24,7 +24,7 @@ app.get("/", (req, res) =>{
 });
 
 const PORT = process.env.PORT;
-mongoose.connect(config.MONGO_URL)
+mongoose.connect(process.env.MONGO_URL)
 .then(()=>{
     app.listen(PORT, ()=>{
         console.log("Server started on port no. " + PORT);
