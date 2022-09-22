@@ -4,6 +4,12 @@ const jwt = require("jsonwebtoken");
 const config = require("../../config");
 const SECRET_KEY = config.SECRET_KEY;
 
+
+// Existig user check 
+// Hashed Pasword
+// User Creation 
+// Token Generate
+
 const signup = async (req, res) =>{
 
     const {username, email, password} = req.body;
