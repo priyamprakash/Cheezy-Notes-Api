@@ -7,7 +7,6 @@ const noteRouter = express.Router();
 
 noteRouter.get("/",auth , getNotes);
 
-
 noteRouter.post("/",auth , createNote);
 
 noteRouter.delete("/:id",auth, deleteNote);
