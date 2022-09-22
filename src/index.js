@@ -11,7 +11,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const config = require("../config");
 
-app.use(express.json());
+app.use(express.json()); // request ki body ko JSON me convert kar deta hai 
 
 app.use(cors());
 
